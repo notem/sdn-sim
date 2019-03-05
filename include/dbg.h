@@ -3,6 +3,7 @@
 #define __dbg_h__
 
 #include <sys/time.h>
+#include <time.h>
 #include <stdio.h>
 #include <errno.h>
 #include <string.h>
