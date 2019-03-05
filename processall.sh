@@ -12,7 +12,8 @@ NTP=NTP
 DNS=DNS
 
 # Begin script
-mkdir ${OUTPUT_DIR}
+echo "----------------------------------"
+mkdir ${OUTPUT_DIR} 2>&1 1>/dev/null
 for pcap_file in ${PCAPS_DIR}/*.pcap; do
     pcap_file=$(basename "${pcap_file}")
     echo "-> Processing ${pcap_file}"
